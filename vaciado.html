@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Vaciado de Tanques</title>
+  <h1>"Problema de Vaciado de Tanques"</h1> 
+  <h1>Ecuaciones Diferenciales-Docente:Ing. Rodolfo Guadalupe Alc&aacute;ntara</h1>
+   
+	<h2>Intrucciones de la Actividad:</h2>
+	<h1>El presente prototipo de herramienta web se desarrollo con base en el tema de ecuaciones diferenciales
+    en el problema de problema de "Vaciado de Tanques".
+  </h1>
+  <h2>Funcionamiento y Resultados:</h2>
+	<p>Se pulsa en el bot&oacute;n titulado <strong>Nuevo</strong> para agregar un nuevo calculo, y pulsamos el icono de play para calcular la velocidad de salida</p>
+	<p>El fluido comienza a salir por el orificio, a la
+	  vez que se representa gr&aacute;ficamente la altura de la columna de fluido en funci&oacute;n del
+	  tiempo.</p>
+	<canvas id='canvas_1' width='645' height='400'></canvas>
+		<div id='controls' style='align:left; width:625px; height:70px'>
+			<label for="deposito">Radio dep&oacute;sito (cm):</label> <input type='range' id='deposito'  min='5' max='20' step='0.5' value='10' onchange="printValue('deposito','deposito_1')"/>  
+		<input type='text' id='deposito_1'  value='10' size='3'/> <br/>
+			<label for="orificio">Radio orificio (cm):</label> <input type='range' id='orificio'  min='0.1' max='1.5' step='0.1' value='0.8' onchange="printValue('orificio','orificio_1')"/>  
+		<input type='text' id='orificio_1'  value='0.8' size='3'/> 
+	
+	<div id='botones'>
+			<input id='nuevo' type='button' value='Nuevo'/>
+<input id='empieza' type='button' value='&#9658;'/>
+<input id='pausa' type='button' value='||'/>
+<input id='paso' type='button' value='&gt;|' style='display:none'/>
+		</div>
+    </div>
+
+ 
+	<script src='vaciado.js'></script>
+	<h3>TODOS LOS DERECHOS RESERVADOS</h3>
+  <h3> ISIC 3402</h3>
+  <h4> ECUACIONES DIFERENCIALES</h4>
+</body>
+</html>
